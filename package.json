@@ -1,0 +1,8 @@
+{
+  "name": "graphql-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sanjaypsachdev/graphql-project.git",
+  "author": "Sanjay Sachdev <sanjaypsachdev@gmail.com>",
+  "license": "MIT"
+}

@@ -18,7 +18,7 @@
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "start": "node -r dotenv/config src/app.js",
-    "dev": "nodemon -r dotenv/config --watch src src/app.js dotenv_config_path=dev.env"
+    "start": "node -r dotenv/config server/src/app.js",
+    "dev": "nodemon -r dotenv/config --watch server/src server/src/app.js dotenv_config_path=dev.env"
   }
 }

@@ -6,16 +6,19 @@
   "author": "Sanjay Sachdev <sanjaypsachdev@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-graphql": "^0.11.0",
     "graphql": "^15.3.0",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.9"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon --watch src src/app.js"
+    "start": "node -r dotenv/config src/app.js",
+    "dev": "nodemon -r dotenv/config --watch src src/app.js dotenv_config_path=dev.env"
   }
 }
